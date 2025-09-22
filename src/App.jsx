@@ -262,7 +262,7 @@ const App = () => {
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex justify-between items-center">
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                Portfolio
+                Riccardo Maria Zito
               </div>
               <div className="hidden md:flex space-x-8">
                 {['home', 'projects', 'skills', 'contact'].map((section) => (
@@ -294,7 +294,7 @@ const App = () => {
                 Value Creator
               </h1>
               <h2 className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-300 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
-                Data, AI, Cloud and Analytics
+                Data - AI - Cloud and Analytics
               </h2>
               <p className="text-xl md:text-2xl text-blue-100/80 mb-8 max-w-3xl mx-auto">
                 Don't look for an answer, look for the question. Then, the answer will shape itself.
