@@ -159,7 +159,6 @@ const App = () => {
       description: 'A comprehensive AI-powered therapy support application that provides mental health assistance through intelligent conversations. Built with modern web technologies and deployed on Azure.',
       technologies: ['React', 'Python', 'Flask/FastAPI', 'Azure Static Web Apps', 'AI/ML', 'GitHub Actions', 'Azure SQL', 'Static web site', 'Key Vault', 'Web App', 'App Plan'],
       liveUrl: 'https://salmon-pebble-0aa0dd103.1.azurestaticapps.net',
-      githubUrl: '#',
       image: '🧠',
       status: 'Demo',
       category: 'AI/Healthcare',
@@ -174,25 +173,22 @@ const App = () => {
       title: 'Energy Analytics',
       description: 'Interactive dashboard for business intelligence and data visualization with real-time updates and advanced filtering capabilities.',
       technologies: ['Python', 'Plotly', 'Pandas', 'PostgreSQL', 'Docker'],
-      liveUrl: '#',
-      githubUrl: '#',
       image: '📊',
       status: 'Completed',
       category: 'Data Science',
       highlights: [
-        'Real-time data processing and visualization',
-        'Advanced filtering and drill-down capabilities',
-        'Export functionality for reports',
-        'Responsive charts and graphs'
+        'Energy production forecasting for renewable power plants',
+        'PPA evaluations',
+        'Energy companies churn rate modeling',
+        'Pricing forecasting',
+        'Commodity swap and options pricing'
       ]
     },
     {
       id: 'IA',
       title: 'Insurance Analytics',
-      description: 'Interactive dashboard for business intelligence and data visualization with real-time updates and advanced filtering capabilities.',
+      description: 'End-to-end app development for Planning',
       technologies: ['Python', 'Plotly', 'Pandas', 'PostgreSQL', 'Docker'],
-      liveUrl: '#',
-      githubUrl: '#',
       image: '📊',
       status: 'Completed',
       category: 'Data Science',
@@ -209,7 +205,6 @@ const App = () => {
       description: 'Analize Multi-spectral measurements on physical samples to unvail composition in art works and industry. Check out my article on MDPI',
       technologies: ['Python', 'MatLab'],
       liveUrl: '#',
-      githubUrl: '#',
       image: '🔬',
       status: 'Completed',
       category: 'Data Science',
@@ -316,7 +311,7 @@ const App = () => {
             </div>
 
             <div className="flex justify-center space-x-6">
-              <a href="https://github.com/yourusername" className="text-blue-300/60 hover:text-blue-300 transition-colors">
+              <a href="https://github.com/RicZit" className="text-blue-300/60 hover:text-blue-300 transition-colors">
                 <Github size={24} />
               </a>
               <a href="https://linkedin.com/in/yourprofile" className="text-blue-300/60 hover:text-blue-300 transition-colors">
