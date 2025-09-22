@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react';
-import { Github, ExternalLink, Mail, Linkedin, Code, Brain, Database, Globe, Calendar, ArrowRight } from 'lucide-react';
+import { Github, ExternalLink, Mail, Linkedin, ArrowRight } from 'lucide-react';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
