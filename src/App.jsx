@@ -156,7 +156,7 @@ const App = () => {
       id: 'therapai',
       title: 'TherapAI - AI Therapy Support Platform',
       description: 'A comprehensive AI-powered therapy support application that provides mental health assistance through intelligent conversations. Built with modern web technologies and deployed on Azure.',
-      technologies: ['React', 'Python', 'Flask/FastAPI', 'Azure Static Web Apps', 'AI/ML', 'GitHub Actions', 'Azure SQL', 'Static web site', 'Key Vault', 'Web App', 'App Plan'],
+      technologies: ['React', 'Python', 'Flask/FastAPI', 'Azure Static Web Apps', 'AI/ML', 'GitHub Actions', 'Azure SQL', 'Static web site', 'Key Vault', 'Web App', 'App Plan', 'Azure Functions'],
       liveUrl: 'https://salmon-pebble-0aa0dd103.1.azurestaticapps.net',
       image: '🧠',
       status: 'Demo',
@@ -171,8 +171,8 @@ const App = () => {
     {
       id: 'EA',
       title: 'Energy Analytics',
-      description: 'Interactive dashboard for business intelligence and data visualization with real-time updates and advanced filtering capabilities.',
-      technologies: ['Python', 'Plotly', 'Pandas', 'PostgreSQL', 'Docker'],
+      description: 'Automation and forecasting projects for energy and finacial energy applications.',
+      technologies: ['Python', 'Pandas', 'PostgreSQL', 'PySpark', 'Databricks'],
       image: '📊',
       status: 'Completed',
       category: 'Data Science',
@@ -185,20 +185,22 @@ const App = () => {
         'Pricing forecasting',
         'Commodity swap and options pricing',
         'Scenario Analysis',
+        'Hedge Accounting',
+        'Power market trading'
       ]
     },
     {
       id: 'IA',
       title: 'Insurance Analytics',
       description: 'End-to-end app development for Planning',
-      technologies: ['Python', 'Plotly', 'Pandas', 'PostgreSQL', 'Docker'],
+      technologies: ['Python', 'Flask', 'Pandas', 'Numpy','PostgreSQL'],
       image: '📊',
       status: 'Completed',
       category: 'Data Science',
       highlights: [
         'IaC',
         'Cloud Infrastructure',
-        'Economic planning',
+        'Planning',
         'Scenario Analysis',
         'Financial reporting',
       ]
@@ -206,9 +208,9 @@ const App = () => {
     {
       id: 'PA',
       title: 'Physical Analysis',
-      description: 'Analize Multi-spectral measurements on physical samples to unvail composition in art works and industry. Check out my article on MDPI',
+      description: 'Analize Multi-spectral measurements on physical samples to unvail composition in art works and industry. Check out my article on MDPI.',
       technologies: ['Python', 'MatLab'],
-      liveUrl: '#',
+      liveUrl: 'https://www.mdpi.com/2071-1050/16/6/2467',
       image: '🔬',
       status: 'Completed',
       category: 'Data Science',
