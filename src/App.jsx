@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Github, ExternalLink, Mail, Linkedin, ArrowRight } from 'lucide-react';
+import { Github, ExternalLink, Mail, Linkedin, ArrowDown } from 'lucide-react';
 
 const DataBackground = () => {
   const canvasRef = useRef(null);
@@ -163,8 +163,9 @@ const App = () => {
       category: 'AI/Healthcare',
       highlights: [
         'Intelligent conversation flow with AI responses',
-        'Automated CI/CD deployment pipeline',
-        'Azure cloud infrastructure'
+        'Cloud Infrastructure',
+        'Prompting',
+        'Text processing'
       ]
     },
     {
@@ -176,11 +177,14 @@ const App = () => {
       status: 'Completed',
       category: 'Data Science',
       highlights: [
+        'IaC',
+        'Cloud Infrastructure',
         'Energy production forecasting for renewable power plants',
         'PPA evaluations',
         'Energy companies churn rate modeling',
         'Pricing forecasting',
-        'Commodity swap and options pricing'
+        'Commodity swap and options pricing',
+        'Scenario Analysis',
       ]
     },
     {
@@ -192,10 +196,11 @@ const App = () => {
       status: 'Completed',
       category: 'Data Science',
       highlights: [
-        'Real-time data processing and visualization',
-        'Advanced filtering and drill-down capabilities',
-        'Export functionality for reports',
-        'Responsive charts and graphs'
+        'IaC',
+        'Cloud Infrastructure',
+        'Economic planning',
+        'Scenario Analysis',
+        'Financial reporting',
       ]
     },
     {
@@ -209,6 +214,7 @@ const App = () => {
       category: 'Data Science',
       highlights: [
         'Multi-spectral data processing',
+        'Cultural Heritage applications',
         'Advanced analytical algorithms',
         'Research publication quality',
         'Industry application ready'
@@ -219,7 +225,7 @@ const App = () => {
   const skills = [
     { category: 'Backend', items: ['Python', 'Flask/FastAPI', 'REST APIs', 'Spark'] },
     { category: 'Database', items: ['PostgreSQL', 'MySQL', 'SQLite', 'BigTable', 'BigQuery'] },
-    { category: 'Cloud/DevOps', items: ['Azure', 'AWS', 'GCP', 'Databricks', 'Docker', 'GitHub Actions', 'CI/CD'] },
+    { category: 'Cloud/DevOps', items: ['Azure', 'AWS', 'GCP', 'Databricks', 'Data Warehouse', 'Data Lake', 'Docker', 'GitHub Actions', 'CI/CD'] },
     { category: 'AI/ML', items: ['Machine Learning', 'Natural Language Processing', 'Data Analysis', 'TensorFlow'] },
     { category: 'Frontend', items: ['React', 'JavaScript/TypeScript', 'HTML5/CSS3', 'Tailwind CSS', 'Vue.js'] }
   ];
@@ -286,7 +292,7 @@ const App = () => {
                 Value Creator
               </h1>
               <h2 className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-300 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
-                Data, AI, Cloud, Analytics, Problem finding & solving
+                Data, AI, Cloud and Analytics
               </h2>
               <p className="text-xl md:text-2xl text-blue-100/80 mb-8 max-w-3xl mx-auto">
                 Don't look for an answer, look for the question. Then, the answer will shape itself.
@@ -299,14 +305,9 @@ const App = () => {
                 className="group bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg shadow-blue-500/25"
               >
                 View My Work
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                <ArrowDown className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </button>
-              <a
-                href="mailto:riccardomaria.zito@gmail.com"
-                className="border border-blue-400/30 hover:border-blue-400/60 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-blue-500/10 backdrop-blur-sm"
-              >
-                Get In Touch
-              </a>
+
             </div>
 
             <div className="flex justify-center space-x-6">
@@ -459,7 +460,7 @@ const App = () => {
               isVisible.contact ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}>
               <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                Let's Work Together
+                Let's Connect!
               </h2>
               <p className="text-xl text-blue-100/80 mb-8 max-w-2xl mx-auto">
                 I'm always interested in new opportunities and exciting projects. Let's discuss how we can bring your ideas to life.
