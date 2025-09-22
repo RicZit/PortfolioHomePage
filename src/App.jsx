@@ -144,11 +144,13 @@ const App = () => {
               👨‍💻
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Software Engineer
+              Value Creator
             </h1>
+            <h2 className="text-3xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Data, AI, Cloud, Analytics, Problem finding & solving
+            </h2>
             <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
-              Building innovative solutions with AI, modern web technologies, and cloud platforms. 
-              Passionate about creating impactful applications that solve real-world problems.
+              Don't look for an answer, look for the question. Then, the answer will shape itself.
             </p>
           </div>
           
