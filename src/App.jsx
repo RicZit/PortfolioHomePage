@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import { Github, ExternalLink, Mail, Linkedin, ArrowRight } from 'lucide-react';
 
@@ -31,29 +30,27 @@ const App = () => {
       id: 'therapai',
       title: 'TherapAI - AI Therapy Support Platform',
       description: 'A comprehensive AI-powered therapy support application that provides mental health assistance through intelligent conversations. Built with modern web technologies and deployed on Azure.',
-      technologies: ['React', 'Python', 'Flask/FastAPI', 'Azure Static Web Apps', 'AI/ML', 'GitHub Actions'],
+      technologies: ['React', 'Python', 'Flask/FastAPI', 'Azure Static Web Apps', 'AI/ML', 'GitHub Actions', 'Azure SQL', 'Static web site', 'Key Vault', 'Web App', 'App Plan'],
       liveUrl: 'https://salmon-pebble-0aa0dd103.1.azurestaticapps.net',
       githubUrl: '#',
       image: '🧠',
-      status: 'Live',
+      status: 'Demo',
       category: 'AI/Healthcare',
       highlights: [
         'Intelligent conversation flow with AI responses',
-        'Secure user data handling and privacy protection',
-        'Responsive design for mobile and desktop',
         'Automated CI/CD deployment pipeline',
         'Azure cloud infrastructure'
       ]
     },
     {
-      id: 'project2',
-      title: 'Data Analytics Dashboard',
+      id: 'EA',
+      title: 'Energy Analytics',
       description: 'Interactive dashboard for business intelligence and data visualization with real-time updates and advanced filtering capabilities.',
       technologies: ['Python', 'Plotly', 'Pandas', 'PostgreSQL', 'Docker'],
       liveUrl: '#',
       githubUrl: '#',
       image: '📊',
-      status: 'In Development',
+      status: 'Completed',
       category: 'Data Science',
       highlights: [
         'Real-time data processing and visualization',
@@ -63,15 +60,32 @@ const App = () => {
       ]
     },
     {
-      id: 'project3',
-      title: 'E-Commerce API Platform',
-      description: 'RESTful API platform for e-commerce operations with comprehensive authentication, payment processing, and inventory management.',
-      technologies: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],
+      id: 'IA',
+      title: 'Insurance Analytics',
+      description: 'Interactive dashboard for business intelligence and data visualization with real-time updates and advanced filtering capabilities.',
+      technologies: ['Python', 'Plotly', 'Pandas', 'PostgreSQL', 'Docker'],
       liveUrl: '#',
       githubUrl: '#',
-      image: '🛒',
+      image: '📊',
       status: 'Completed',
-      category: 'Backend/API',
+      category: 'Data Science',
+      highlights: [
+        'Real-time data processing and visualization',
+        'Advanced filtering and drill-down capabilities',
+        'Export functionality for reports',
+        'Responsive charts and graphs'
+      ]
+    },
+    {
+      id: 'PA',
+      title: 'Physical Analysis',
+      description: 'Analize Multi-spectral measurements on physical samples to unvail composition in art works and industry. Check out my article on MDPI',
+      technologies: ['Python', 'MatLab'],
+      liveUrl: '#',
+      githubUrl: '#',
+      image: '',
+      status: 'Completed',
+      category: 'Data Science',
       highlights: [
         'JWT authentication and authorization',
         'Payment gateway integration',
@@ -82,11 +96,11 @@ const App = () => {
   ];
 
   const skills = [
-    { category: 'Frontend', items: ['React', 'JavaScript/TypeScript', 'HTML5/CSS3', 'Tailwind CSS', 'Vue.js'] },
-    { category: 'Backend', items: ['Python', 'Flask/FastAPI', 'Node.js', 'Django', 'REST APIs'] },
-    { category: 'Database', items: ['PostgreSQL', 'MongoDB', 'Redis', 'SQLite'] },
-    { category: 'Cloud/DevOps', items: ['Azure', 'AWS', 'Docker', 'GitHub Actions', 'CI/CD'] },
-    { category: 'AI/ML', items: ['Machine Learning', 'Natural Language Processing', 'Data Analysis', 'TensorFlow'] }
+    { category: 'Backend', items: ['Python', 'Flask/FastAPI', 'REST APIs', 'Spark'] },
+    { category: 'Database', items: ['PostgreSQL', 'MySQL', 'SQLite', 'BigTable', 'BigQuery'] },
+    { category: 'Cloud/DevOps', items: ['Azure', 'AWS', 'GCP', 'Databricks', 'Docker', 'GitHub Actions', 'CI/CD'] },
+    { category: 'AI/ML', items: ['Machine Learning', 'Natural Language Processing', 'Data Analysis', 'TensorFlow'] },
+    { category: 'Frontend', items: ['React', 'JavaScript/TypeScript', 'HTML5/CSS3', 'Tailwind CSS', 'Vue.js'] }
   ];
 
   const scrollToSection = (sectionId) => {
@@ -312,11 +326,11 @@ const App = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:riccardomaria.zito@gmail.com"
                 className="group bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-500 hover:to-blue-500 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
               >
                 <Mail className="mr-2" size={20} />
-                Send Email
+                Get in touch
               </a>
               <a
                 href="https://linkedin.com/in/yourprofile"
@@ -325,12 +339,12 @@ const App = () => {
                 className="border border-white/20 hover:border-white/40 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-white/5 flex items-center justify-center"
               >
                 <Linkedin className="mr-2" size={20} />
-                LinkedIn
+                Visit
               </a>
             </div>
 
             <p className="text-white/60">
-              Based in Milan, Lombardy, IT • Available for remote work worldwide
+              Based in Milan, Lombardy, IT
             </p>
           </div>
         </div>
@@ -339,7 +353,7 @@ const App = () => {
       {/* Footer */}
       <footer className="border-t border-white/10 py-8 px-6">
         <div className="max-w-7xl mx-auto text-center text-white/60">
-          <p>&copy; 2024 Your Name. Built with React and passion for great software.</p>
+          <p>&copy; 2024 Riccardo Maria Zito</p>
         </div>
       </footer>
     </div>
