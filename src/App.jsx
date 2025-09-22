@@ -21,7 +21,7 @@ const DataBackground = () => {
     const nodes = [];
     
     // Create nodes
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 100; i++) {
       nodes.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -34,7 +34,7 @@ const DataBackground = () => {
     
     // Data streams
     const dataStreams = [];
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 25; i++) {
       dataStreams.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -316,7 +316,7 @@ const App = () => {
               <a href="https://github.com/RicZit" className="text-blue-300/60 hover:text-blue-300 transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com/in/yourprofile" className="text-blue-300/60 hover:text-blue-300 transition-colors">
+              <a href="https://www.linkedin.com/in/riccardo-maria-zito" className="text-blue-300/60 hover:text-blue-300 transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="mailto:riccardomaria.zito@gmail.com" className="text-blue-300/60 hover:text-blue-300 transition-colors">
@@ -477,7 +477,7 @@ const App = () => {
                   Get in touch
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/riccardo-maria-zito"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-blue-400/30 hover:border-blue-400/60 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-blue-500/10 backdrop-blur-sm flex items-center justify-center"
