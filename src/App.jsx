@@ -19,7 +19,6 @@ const DataBackground = () => {
     
     // Network nodes
     const nodes = [];
-    const connections = [];
     
     // Create nodes
     for (let i = 0; i < 50; i++) {
