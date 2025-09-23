@@ -161,7 +161,7 @@ const App = () => {
       image: '',
       status: 'Completed',
       category: 'Bachelor Degree',
-      university: 'Politecnico di Milano',
+      universities: ['Politecnico di Milano'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
     },
@@ -174,7 +174,7 @@ const App = () => {
       image: '',
       status: 'Completed',
       category: 'Master Degree',
-      university: 'Politecnico di Milano',
+      universities: ['Politecnico di Milano'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
     },
@@ -187,7 +187,7 @@ const App = () => {
       image: '',
       status: 'Completed',
       category: 'Master Degree',
-      university: 'Università degli Studi di Milano',
+      universities: ['Università degli Studi di Milano'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
     }
