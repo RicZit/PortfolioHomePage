@@ -166,7 +166,9 @@ const App = () => {
         'Cloud Infrastructure',
         'Prompting',
         'Text processing'
-      ]
+      ],
+      showButtons : {live: true, github: true},
+      liveButtonText: 'try demo'
     },
     {
       id: 'EA',
@@ -187,7 +189,9 @@ const App = () => {
         'Scenario Analysis',
         'Hedge Accounting',
         'Power market trading'
-      ]
+      ],
+      showButtons : {live: false, github: false},
+      liveButtonText: ''
     },
     {
       id: 'IA',
@@ -203,7 +207,9 @@ const App = () => {
         'Planning',
         'Scenario Analysis',
         'Financial reporting',
-      ]
+      ],
+      showButtons : {live: false, github: false},
+      liveButtonText: ''
     },
     {
       id: 'PA',
@@ -220,7 +226,9 @@ const App = () => {
         'Advanced analytical algorithms',
         'Research publication quality',
         'Industry application ready'
-      ]
+      ],
+      showButtons : {live: true, github: false},
+      liveButtonText: 'Article'
     }
   ];
 
@@ -370,7 +378,7 @@ const App = () => {
                   <div className="mb-4">
                     <div className="text-xs text-blue-200/50 mb-2">Key Features:</div>
                     <ul className="text-xs text-blue-100/70 space-y-1">
-                      {project.highlights.slice(0, 3).map((highlight, i) => (
+                      {project.highlights.slice(0, 5).map((highlight, i) => (
                         <li key={i} className="flex items-center">
                           <div className="w-1 h-1 bg-blue-400 rounded-full mr-2"></div>
                           {highlight}
@@ -391,16 +399,17 @@ const App = () => {
                   </div>
                   
                   <div className="flex space-x-3">
-                    <a
+                    {project.showButtons?.live && (<a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center text-sm bg-blue-600/30 hover:bg-blue-600/40 text-blue-300 px-3 py-2 rounded-lg transition-colors border border-blue-500/30"
                     >
                       <ExternalLink size={14} className="mr-1" />
-                      Live Demo
+                      {project.liveButtonText || 'Live Demo'}
                     </a>
-                    <a
+                  )}
+                    {project.showButtons?.github && (<a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -409,6 +418,7 @@ const App = () => {
                       <Github size={14} className="mr-1" />
                       Code
                     </a>
+                    )}
                   </div>
                 </div>
               ))}
