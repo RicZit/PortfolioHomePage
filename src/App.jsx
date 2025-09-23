@@ -154,47 +154,40 @@ const App = () => {
   const credentials = [
     {
       id: 'BSc',
-      title: 'Engineering Physics',
+      title: 'BSc Engineering Physics',
       description: '',
       field: ['Engineering', 'Physics'],
       liveUrl: '',
       image: '',
       status: 'Completed',
       category: 'Bachelor Degree',
-      highlights: [
-        'Intelligent conversation flow with AI responses',
-        'Cloud Infrastructure',
-        'Prompting',
-        'Text processing'
-      ],
+      university: 'Politecnico di Milano',
       showButtons : {live: false, github: false},
       liveButtonText: ''
     },
     {
       id: 'MSc1',
-      title: 'Nuclear Engineering',
+      title: 'MSc Nuclear Engineering',
       description: '',
       field: ['Engineering', 'Physics'],
       liveUrl: '',
       image: '',
       status: 'Completed',
       category: 'Master Degree',
-      highlights: [
-      ],
+      university: 'Politecnico di Milano',
       showButtons : {live: false, github: false},
       liveButtonText: ''
     },
     {
       id: 'MSc2',
-      title: 'Physics',
+      title: 'MSc Applied Physics',
       description: '',
       field: ['Physics'],
       liveUrl: '',
       image: '',
       status: 'Completed',
       category: 'Master Degree',
-      highlights: [
-      ],
+      university: 'Università degli Studi di Milano',
       showButtons : {live: false, github: false},
       liveButtonText: ''
     }
@@ -425,12 +418,12 @@ const App = () => {
                   </p>
                   
                   <div className="mb-4">
-                    <div className="text-xs text-blue-200/50 mb-2">Key Features:</div>
+                    <div className="text-xs text-blue-200/50 mb-2">University:</div>
                     <ul className="text-xs text-blue-100/70 space-y-1">
-                      {credential.highlights.slice(0, 5).map((highlight, i) => (
+                      {credential.universities.map((university, i) => (
                         <li key={i} className="flex items-center">
                           <div className="w-1 h-1 bg-blue-400 rounded-full mr-2"></div>
-                          {highlight}
+                          {university}
                         </li>
                       ))}
                     </ul>
