@@ -151,6 +151,55 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
 
+  const credentials = [
+    {
+      id: 'BSc',
+      title: 'Engineering Physics',
+      description: '',
+      field: ['Engineering', 'Physics'],
+      liveUrl: '',
+      image: '',
+      status: 'Completed',
+      category: 'Bachelor Degree',
+      highlights: [
+        'Intelligent conversation flow with AI responses',
+        'Cloud Infrastructure',
+        'Prompting',
+        'Text processing'
+      ],
+      showButtons : {live: false, github: false},
+      liveButtonText: ''
+    },
+    {
+      id: 'MSc1',
+      title: 'Nuclear Engineering',
+      description: '',
+      field: ['Engineering', 'Physics'],
+      liveUrl: '',
+      image: '',
+      status: 'Completed',
+      category: 'Master Degree',
+      highlights: [
+      ],
+      showButtons : {live: false, github: false},
+      liveButtonText: ''
+    },
+    {
+      id: 'MSc2',
+      title: 'Physics',
+      description: '',
+      field: ['Physics'],
+      liveUrl: '',
+      image: '',
+      status: 'Completed',
+      category: 'Master Degree',
+      highlights: [
+      ],
+      showButtons : {live: false, github: false},
+      liveButtonText: ''
+    }
+  ]
+
   const projects = [
     {
       id: 'therapai',
@@ -330,6 +379,98 @@ const App = () => {
               <a href="mailto:riccardomaria.zito@gmail.com" className="text-blue-300/60 hover:text-blue-300 transition-colors">
                 <Mail size={24} />
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Formal Credentials Section */}
+        <section id="Credential" className="py-20 px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className={`text-center mb-16 transform transition-all duration-1000 ${
+              isVisible.credentials ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+            }`}>
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Formal Credentials
+              </h2>
+              <p className="text-xl text-blue-100/80 max-w-3xl mx-auto">
+                Instruction and life-long learning
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {credentials.map((credential, index) => (
+                <div
+                  key={credential.id}
+                  className={`group bg-slate-900/40 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-6 hover:bg-slate-900/60 hover:border-blue-400/40 transition-all duration-500 transform hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-blue-500/10 ${
+                    isVisible.credentials ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                  }`}
+                  style={{ transitionDelay: `${index * 200}ms` }}
+                >
+                  <div className="text-4xl mb-4">{credential.image}</div>
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
+                      {credential.title}
+                    </h3>
+                    <span className={`text-xs px-2 py-1 rounded-full ${
+                      credential.status === 'Completed' ? 'bg-green-500/20 text-green-400' :
+                      credential.status === 'Ongoing' ? 'bg-yellow-500/20 text-yellow-400' :
+                      'bg-blue-500/20 text-blue-400'
+                    }`}>
+                      {credential.status}
+                    </span>
+                  </div>
+                  
+                  <p className="text-blue-100/70 mb-4 text-sm leading-relaxed">
+                    {credential.description}
+                  </p>
+                  
+                  <div className="mb-4">
+                    <div className="text-xs text-blue-200/50 mb-2">Key Features:</div>
+                    <ul className="text-xs text-blue-100/70 space-y-1">
+                      {credential.highlights.slice(0, 5).map((highlight, i) => (
+                        <li key={i} className="flex items-center">
+                          <div className="w-1 h-1 bg-blue-400 rounded-full mr-2"></div>
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {credential.field.map((f) => (
+                      <span
+                        key={f}
+                        className="text-xs bg-blue-500/20 text-blue-200/80 px-2 py-1 rounded-full border border-blue-500/20"
+                      >
+                        {f}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <div className="flex space-x-3">
+                    {credential.showButtons?.live && (<a
+                      href={credential.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-sm bg-blue-600/30 hover:bg-blue-600/40 text-blue-300 px-3 py-2 rounded-lg transition-colors border border-blue-500/30"
+                    >
+                      <ExternalLink size={14} className="mr-1" />
+                      {credential.liveButtonText || 'Live Demo'}
+                    </a>
+                  )}
+                    {credential.showButtons?.github && (<a
+                      href={credential.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-sm bg-slate-800/50 hover:bg-slate-700/50 text-blue-200/80 px-3 py-2 rounded-lg transition-colors border border-slate-600/30"
+                    >
+                      <Github size={14} className="mr-1" />
+                      Code
+                    </a>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
