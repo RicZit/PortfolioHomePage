@@ -322,7 +322,7 @@ const App = () => {
                 Riccardo Maria Zito
               </div>
               <div className="hidden md:flex space-x-8">
-                {['home', 'projects', 'skills', 'contact'].map((section) => (
+                {['home', 'credentials', 'projects', 'skills', 'contact'].map((section) => (
                   <button
                     key={section}
                     onClick={() => scrollToSection(section)}
@@ -384,7 +384,7 @@ const App = () => {
         </section>
 
         {/* Formal Credentials Section */}
-        <section id="Credential" className="py-20 px-6">
+        <section id="credential" className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className={`text-center mb-16 transform transition-all duration-1000 ${
               isVisible.credentials ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
