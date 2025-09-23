@@ -205,7 +205,7 @@ const App = () => {
       id: 'therapai',
       title: 'TherapAI - AI Therapy Support Platform',
       description: 'A comprehensive AI-powered therapy support application that provides mental health assistance through intelligent conversations. Built with modern web technologies and deployed on Azure.',
-      technologies: ['React', 'Python', 'Flask/FastAPI', 'Azure Static Web Apps', 'AI/ML', 'GitHub Actions', 'Azure SQL', 'Static web site', 'Key Vault', 'Web App', 'App Plan', 'Azure Functions'],
+      technologies: ['React', 'Python', 'Flask/FastAPI', 'Azure Static Web Site', 'AI/ML', 'GitHub Actions', 'Azure SQL', 'REST API', 'Key Vault', 'Web App', 'App Plan', 'Azure Functions'],
       liveUrl: 'https://salmon-pebble-0aa0dd103.1.azurestaticapps.net',
       image: '🧠',
       status: 'Demo',
@@ -384,7 +384,7 @@ const App = () => {
         </section>
 
         {/* Formal Credentials Section */}
-        <section id="credential" className="py-20 px-6">
+        <section id="credentials" className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className={`text-center mb-16 transform transition-all duration-1000 ${
               isVisible.credentials ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
