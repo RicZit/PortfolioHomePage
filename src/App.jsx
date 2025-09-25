@@ -190,6 +190,32 @@ const App = () => {
       universities: ['Università degli Studi di Milano'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
+    },
+    {
+      id: 'CloudCert1',
+      title: 'Google Cloud Certified Professional Data Engineer',
+      description: '',
+      field: ['Cloud'],
+      liveUrl: '',
+      image: '',
+      status: 'Completed',
+      category: 'Certification',
+      universities: ['Google Cloud Platform'],
+      showButtons : {live: false, github: false},
+      liveButtonText: ''
+    },
+    {
+      id: 'CorsoSpecializzazione1',
+      title: 'AI, Big Data and Platforms',
+      description: '',
+      field: ['Legal', 'Cloud'],
+      liveUrl: '',
+      image: '',
+      status: 'Completed',
+      category: 'Advanced Professional Certificate',
+      universities: ['Univeristà degli Studi di Milano'],
+      showButtons : {live: false, github: false},
+      liveButtonText: ''
     }
   ]
 
