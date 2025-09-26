@@ -314,7 +314,8 @@ const App = () => {
         'Relational databases'
       ],
       showButtons : {live: false, github: true},
-      liveButtonText: ''
+      liveButtonText: '',
+      githubUrl: 'https://github.com/RicZit/relational_versioning.git'
     }, 
     {
       id: 'weddingsite',
