@@ -297,7 +297,39 @@ const App = () => {
       ],
       showButtons : {live: true, github: false},
       liveButtonText: 'Article'
-    }
+    },
+    {
+      id: 'versioninglibrarysystem',
+      title: 'Versioning library',
+      description: 'A versioning library to enable versioning and version tracking of data and elaboration through processes, compatible with most common relational database',
+      technologies: ['Python', 'PostgreSQL', 'Azure SQL', 'MySQL', 'SQLite'],
+      liveUrl: '',
+      image: '',
+      status: 'Development',
+      category: 'SW development',
+      highlights: [
+        'Library development',
+        'Architecture',
+        'Coding',
+        'Relational databases'
+      ],
+      showButtons : {live: false, github: true},
+      liveButtonText: ''
+    }, 
+    {
+      id: 'weddingsite',
+      title: 'Wedding Site',
+      description: 'My personal wedding website',
+      technologies: ['Python','Azure Static Web Site', 'GitHub Actions', 'Azure SQL', 'REST API'],
+      liveUrl: '',
+      image: '',
+      status: 'Development',
+      category: 'Events planning',
+      highlights: [
+      ],
+      showButtons : {live: false, github: false},
+      liveButtonText: 'try demo'
+    },
   ];
 
   const skills = [
