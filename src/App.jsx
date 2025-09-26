@@ -444,7 +444,7 @@ const App = () => {
                   </p>
                   
                   <div className="mb-4">
-                    <div className="text-xs text-blue-200/50 mb-2">Certifing body:</div>
+                    <div className="text-xs text-blue-200/50 mb-2">Certifying body:</div>
                     <ul className="text-xs text-blue-100/70 space-y-1">
                       {credential.entities.map((entity, i) => (
                         <li key={i} className="flex items-center">
