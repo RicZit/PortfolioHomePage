@@ -161,7 +161,7 @@ const App = () => {
       image: '',
       status: 'Completed',
       category: 'Bachelor Degree',
-      universities: ['Politecnico di Milano'],
+      entities: ['Politecnico di Milano'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
     },
@@ -174,7 +174,7 @@ const App = () => {
       image: '',
       status: 'Completed',
       category: 'Master Degree',
-      universities: ['Politecnico di Milano'],
+      entities: ['Politecnico di Milano'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
     },
@@ -187,7 +187,7 @@ const App = () => {
       image: '',
       status: 'Completed',
       category: 'Master Degree',
-      universities: ['Università degli Studi di Milano'],
+      entities: ['Università degli Studi di Milano'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
     },
@@ -200,7 +200,7 @@ const App = () => {
       image: '',
       status: 'Completed',
       category: 'Certification',
-      universities: ['Google Cloud Platform'],
+      entities: ['Google Cloud Platform'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
     },
@@ -213,7 +213,7 @@ const App = () => {
       image: '',
       status: 'Completed',
       category: 'Advanced Professional Certificate',
-      universities: ['Univeristà degli Studi di Milano'],
+      entities: ['Univeristà degli Studi di Milano'],
       showButtons : {live: false, github: false},
       liveButtonText: ''
     }
@@ -444,12 +444,12 @@ const App = () => {
                   </p>
                   
                   <div className="mb-4">
-                    <div className="text-xs text-blue-200/50 mb-2">University:</div>
+                    <div className="text-xs text-blue-200/50 mb-2">Certifing body:</div>
                     <ul className="text-xs text-blue-100/70 space-y-1">
-                      {credential.universities.map((university, i) => (
+                      {credential.entities.map((entity, i) => (
                         <li key={i} className="flex items-center">
                           <div className="w-1 h-1 bg-blue-400 rounded-full mr-2"></div>
-                          {university}
+                          {entity}
                         </li>
                       ))}
                     </ul>
