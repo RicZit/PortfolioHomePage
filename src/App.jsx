@@ -550,7 +550,7 @@ const App = () => {
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
-                  <img src={project.image} alt='section_logo'/>
+                  <img src={project.image} alt='section_logo' className="h-4 w-auto"/>
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
                       {project.title}
