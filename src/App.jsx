@@ -201,8 +201,8 @@ const App = () => {
       status: 'Completed',
       category: 'Certification',
       entities: ['Google Cloud Platform'],
-      showButtons : {live: false, github: false},
-      liveButtonText: ''
+      showButtons : {live: true, github: false},
+      liveButtonText: 'credential'
     },
     {
       id: 'CorsoSpecializzazione1',
