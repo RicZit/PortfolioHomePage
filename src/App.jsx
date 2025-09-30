@@ -557,7 +557,7 @@ const App = () => {
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
                   {
-                    project.image_type == 'str'? 
+                    project.image_type === 'str'? 
                   <div className="mb-8">
                     <img src={logo} alt='logo' className='h-24 w-24 mx-auto mb-6 object-contain'/>
                   </div> : <div className="text-4xl mb-4">{project.image}</div>
