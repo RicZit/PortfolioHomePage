@@ -161,6 +161,7 @@ const App = () => {
       field: ['Engineering', 'Physics'],
       liveUrl: '',
       image: '',
+      image_type: 'str',
       status: 'Completed',
       category: 'Bachelor Degree',
       entities: ['Politecnico di Milano'],
@@ -174,6 +175,7 @@ const App = () => {
       field: ['Engineering', 'Physics'],
       liveUrl: '',
       image: '',
+      image_type: 'str',
       status: 'Completed',
       category: 'Master Degree',
       entities: ['Politecnico di Milano'],
@@ -187,6 +189,7 @@ const App = () => {
       field: ['Physics'],
       liveUrl: '',
       image: '',
+      image_type: 'str',
       status: 'Completed',
       category: 'Master Degree',
       entities: ['Università degli Studi di Milano'],
@@ -200,6 +203,7 @@ const App = () => {
       field: ['Cloud'],
       liveUrl: 'https://www.credly.com/badges/eec123e7-6364-47e2-9d2f-351497aefa58/public_url',
       image: gcpBadge,
+      image_type: 'image',
       status: 'Completed',
       category: 'Certification',
       entities: ['Google Cloud Platform'],
@@ -213,6 +217,7 @@ const App = () => {
       field: ['Legal', 'Cloud'],
       liveUrl: '',
       image: '',
+      image_type: 'str',
       status: 'Completed',
       category: 'Advanced Professional Certificate',
       entities: ['Univeristà degli Studi di Milano'],
@@ -464,6 +469,9 @@ const App = () => {
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
+                  {credential.image_type ==='str' ? <div className="text-4xl mb-4">{credential.image}</div> :<div className="mb-8">
+                    <img src={credential.image} alt='logo' className='h-24 w-24 mx-auto mb-6 object-contain'/>
+                  </div>}
                   <div className="text-4xl mb-4">{credential.image}</div>
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
@@ -559,7 +567,7 @@ const App = () => {
                   {
                     project.image_type === 'str'? <div className="text-4xl mb-4">{project.image}</div> :
                   <div className="mb-8">
-                    <img src={logo} alt='logo' className='h-24 w-24 mx-auto mb-6 object-contain'/>
+                    <img src={project.image} alt='logo' className='h-24 w-24 mx-auto mb-6 object-contain'/>
                   </div>                  
                   }
                   <div className="flex justify-between items-start mb-3">
