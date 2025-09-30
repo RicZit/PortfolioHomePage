@@ -398,7 +398,7 @@ const App = () => {
             isVisible.home ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             <div className="mb-4">
-              <img src={logo} alt='logo'/>
+              <img src={logo} alt='logo' classname='h-4 w-4'/>
               <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Value Creator
               </h1>
