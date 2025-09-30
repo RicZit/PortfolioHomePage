@@ -229,6 +229,7 @@ const App = () => {
       technologies: ['React', 'Python', 'Flask/FastAPI', 'Azure Static Web Site', 'AI/ML', 'GitHub Actions', 'Azure SQL', 'REST API', 'Key Vault', 'Web App', 'App Plan', 'Azure Functions'],
       liveUrl: 'https://salmon-pebble-0aa0dd103.1.azurestaticapps.net',
       image: '🧠',
+      image_type: 'str',
       status: 'Demo',
       category: 'AI/Healthcare',
       highlights: [
@@ -246,6 +247,7 @@ const App = () => {
       description: 'Automation and forecasting projects for energy and finacial energy applications.',
       technologies: ['Python', 'Pandas', 'PostgreSQL', 'PySpark', 'Databricks'],
       image: '📊',
+      image_type: 'str',
       status: 'Completed',
       category: 'Data Science',
       highlights: [
@@ -269,6 +271,7 @@ const App = () => {
       description: 'End-to-end app development for Planning',
       technologies: ['Python', 'Flask', 'Pandas', 'Numpy','PostgreSQL'],
       image: '📊',
+      image_type: 'str',
       status: 'Completed',
       category: 'Data Science',
       highlights: [
@@ -288,6 +291,7 @@ const App = () => {
       technologies: ['Python', 'MatLab'],
       liveUrl: 'https://www.mdpi.com/2071-1050/16/6/2467',
       image: '🔬',
+      image_type: 'link',
       status: 'Completed',
       category: 'Data Science',
       highlights: [
@@ -307,6 +311,7 @@ const App = () => {
       technologies: ['Python', 'PostgreSQL', 'Azure SQL', 'MySQL', 'SQLite'],
       liveUrl: '',
       image: '',
+      image_type: 'str',
       status: 'Development',
       category: 'SW development',
       highlights: [
@@ -326,6 +331,7 @@ const App = () => {
       technologies: ['Python','Azure Static Web Site', 'GitHub Actions', 'Azure SQL', 'REST API'],
       liveUrl: '',
       image: '',
+      image_type: 'str',
       status: 'Development',
       category: 'Events planning',
       highlights: [
@@ -398,7 +404,7 @@ const App = () => {
             isVisible.home ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             <div className="mb-8">
-              <img src={logo} alt='logo' className='h-24 w-24 mx-auto mb-6 object-contain'/>
+              <img src={logo} alt='logo' className='h-32 w-32 mx-auto mb-6 object-contain'/>
               <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Value Creator
               </h1>
@@ -550,9 +556,13 @@ const App = () => {
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
-                  <div className="mb-4">
-                    <img src={project.image} alt='section_logo'/>
-                  </div>
+                  {
+                    project.image_type == 'str'? 
+                  <div className="mb-8">
+                    <img src={logo} alt='logo' className='h-24 w-24 mx-auto mb-6 object-contain'/>
+                  </div> : <div className="text-4xl mb-4">{project.image}</div>
+                  
+                  }
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
                       {project.title}
