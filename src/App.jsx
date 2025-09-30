@@ -296,7 +296,7 @@ const App = () => {
       technologies: ['Python', 'MatLab'],
       liveUrl: 'https://www.mdpi.com/2071-1050/16/6/2467',
       image: '🔬',
-      image_type: 'link',
+      image_type: 'str',
       status: 'Completed',
       category: 'Data Science',
       highlights: [
@@ -469,10 +469,10 @@ const App = () => {
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
-                  {credential.image_type ==='str' ? <div className="text-4xl mb-4">{credential.image}</div> :<div className="mb-8">
+                  {credential.image_type ==='str' ? <div className="text-4xl mb-4">{credential.image}</div>  :
+                  <div className="mb-8">
                     <img src={credential.image} alt='logo' className='h-24 w-24 mx-auto mb-6 object-contain'/>
                   </div>}
-                  <div className="text-4xl mb-4">{credential.image}</div>
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
                       {credential.title}
