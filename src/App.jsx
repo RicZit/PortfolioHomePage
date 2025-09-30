@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, ExternalLink, Mail, Linkedin, ArrowDown } from 'lucide-react';
 import gcpBadge from './assets/professional-data-engineer-certification.png'
+import logo from './assets/logo.png'
 
 const DataBackground = () => {
   const canvasRef = useRef(null);
@@ -397,9 +398,7 @@ const App = () => {
             isVisible.home ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center text-4xl shadow-2xl shadow-blue-500/25">
-                👨‍💻
-              </div>
+              <img src={logo}></img>
               <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Value Creator
               </h1>
@@ -551,7 +550,7 @@ const App = () => {
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
-                  <div className="text-4xl mb-4">{project.image}</div>
+                  <img src={project.image} />
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
                       {project.title}
