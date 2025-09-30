@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, ExternalLink, Mail, Linkedin, ArrowDown } from 'lucide-react';
+import gcpBadge from './assets/professional-data-engineer-certification.png'
 
 const DataBackground = () => {
   const canvasRef = useRef(null);
@@ -197,7 +198,7 @@ const App = () => {
       description: '',
       field: ['Cloud'],
       liveUrl: 'https://www.credly.com/badges/eec123e7-6364-47e2-9d2f-351497aefa58/public_url',
-      image: 'https://images.credly.com/size/340x340/images/eec123e7-6364-47e2-9d2f-351497aefa58/image.png',
+      image: gcpBadge,
       status: 'Completed',
       category: 'Certification',
       entities: ['Google Cloud Platform'],
