@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, ExternalLink, Mail, Linkedin, ArrowDown } from 'lucide-react';
-import gcpBadge from './assets/professional-data-engineer-certification.png'
+import gcpBadge from './assets/professionaldataengineercertification.png'
 import logo from './assets/logo.png'
 
 const DataBackground = () => {
@@ -550,7 +550,7 @@ const App = () => {
                   }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
-                  <img src={project.image} alt='logo'/>
+                  <img src={project.image} alt='section_logo'/>
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
                       {project.title}
