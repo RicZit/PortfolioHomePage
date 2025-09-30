@@ -557,11 +557,10 @@ const App = () => {
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
                   {
-                    project.image_type === 'str'? 
+                    project.image_type === 'str'? <div className="text-4xl mb-4">{project.image}</div> :
                   <div className="mb-8">
                     <img src={logo} alt='logo' className='h-24 w-24 mx-auto mb-6 object-contain'/>
-                  </div> : <div className="text-4xl mb-4">{project.image}</div>
-                  
+                  </div>                  
                   }
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
