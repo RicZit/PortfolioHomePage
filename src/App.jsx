@@ -3,7 +3,7 @@ import { Github, ExternalLink, Mail, Linkedin, ArrowDown } from 'lucide-react';
 import gcpBadge from './assets/professionaldataengineercertification.png'
 import logo from './assets/logo.png'
 import polimi_logo from './assets/polimi logo.png'
-import unimi_logo from './assets/logo_unimi.png'
+import unimi_logo from './assets/unimi_logo.png'
 
 const DataBackground = () => {
   const canvasRef = useRef(null);
