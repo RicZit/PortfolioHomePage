@@ -350,10 +350,10 @@ const App = () => {
 
   const skills = [
     { category: 'Backend', items: ['Python', 'Flask/FastAPI', 'REST APIs', 'Spark'] },
-    { category: 'Database', items: ['PostgreSQL', 'MySQL', 'SQLite', 'BigTable', 'BigQuery'] },
-    { category: 'Cloud/DevOps', items: ['Azure', 'AWS', 'GCP', 'Databricks', 'Data Warehouse', 'Data Lake', 'Docker', 'GitHub Actions', 'CI/CD'] },
+    { category: 'Database', items: ['PostgreSQL', 'MySQL', 'SQLite', 'BigTable', 'BigQuery', 'SQL Spanner', 'Google Cloud SQL'] },
+    { category: 'Cloud/DevOps', items: ['Azure', 'AWS', 'GCP', 'Databricks', 'Data Warehouse', 'Data Lake', 'GitHub Actions', 'CI/CD', 'Architecture', 'FinOps'] },
     { category: 'AI/ML', items: ['Machine Learning', 'Natural Language Processing', 'Data Analysis', 'TensorFlow'] },
-    { category: 'Frontend', items: ['React', 'JavaScript/TypeScript', 'HTML5/CSS3', 'Tailwind CSS', 'Vue.js'] }
+    { category: 'Frontend', items: ['React'] }
   ];
 
   const scrollToSection = (sectionId) => {
