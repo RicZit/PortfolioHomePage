@@ -382,7 +382,7 @@ const App = () => {
       {/* Main content with higher z-index */}
       <div className="relative" style={{ zIndex: 3 }}>
         {/* Navigation */}
-        <nav className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-blue-500/20 z-50">
+        <nav className="fixed top-0 w-full bg-slate-950/80 border-blue-500/20 z-50">
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex justify-between items-center">
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
