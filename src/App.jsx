@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Github, ExternalLink, Mail, Linkedin, ArrowDown } from 'lucide-react';
 import gcpBadge from './assets/professionaldataengineercertification.png'
 import logo from './assets/logo.png'
+import polimi_logo from './assets/polimi logo.png'
 
 const DataBackground = () => {
   const canvasRef = useRef(null);
@@ -160,7 +161,7 @@ const App = () => {
       description: '',
       field: ['Engineering', 'Physics'],
       liveUrl: '',
-      image: '',
+      image: polimi_logo,
       image_type: 'str',
       status: 'Completed',
       category: 'Bachelor Degree',
@@ -174,7 +175,7 @@ const App = () => {
       description: '',
       field: ['Engineering', 'Physics'],
       liveUrl: '',
-      image: '',
+      image: polimi_logo,
       image_type: 'str',
       status: 'Completed',
       category: 'Master Degree',
@@ -212,7 +213,7 @@ const App = () => {
     },
     {
       id: 'CorsoSpecializzazione1',
-      title: 'AI, Big Data and Platforms',
+      title: 'Specialization: AI, Big Data and Platforms',
       description: '',
       field: ['Legal', 'Cloud'],
       liveUrl: '',
