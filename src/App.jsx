@@ -3,6 +3,7 @@ import { Github, ExternalLink, Mail, Linkedin, ArrowDown } from 'lucide-react';
 import gcpBadge from './assets/professionaldataengineercertification.png'
 import logo from './assets/logo.png'
 import polimi_logo from './assets/polimi logo.png'
+import unimi_logo from './assets/logo_unimi.png'
 
 const DataBackground = () => {
   const canvasRef = useRef(null);
@@ -189,8 +190,8 @@ const App = () => {
       description: '',
       field: ['Physics'],
       liveUrl: '',
-      image: '',
-      image_type: 'str',
+      image: unimi_logo,
+      image_type: 'image',
       status: 'Completed',
       category: 'Master Degree',
       entities: ['Università degli Studi di Milano'],
@@ -217,8 +218,8 @@ const App = () => {
       description: '',
       field: ['Legal', 'Cloud'],
       liveUrl: '',
-      image: '',
-      image_type: 'str',
+      image: unimi_logo,
+      image_type: 'image',
       status: 'Completed',
       category: 'Advanced Professional Certificate',
       entities: ['Univeristà degli Studi di Milano'],
