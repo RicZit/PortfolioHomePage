@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Github, ExternalLink, Mail, Linkedin, ArrowDown } from 'lucide-react';
+import { Github, ExternalLink, Linkedin, ArrowDown } from 'lucide-react';
 import gcpBadge from './assets/professionaldataengineercertification.png'
 import logo from './assets/logo.png'
 import polimi_logo from './assets/polimi logo.png'
@@ -441,9 +441,7 @@ const App = () => {
               <a href="https://www.linkedin.com/in/riccardo-maria-zito" className="text-blue-300/60 hover:text-blue-300 transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:riccardomaria.zito@gmail.com" className="text-blue-300/60 hover:text-blue-300 transition-colors">
-                <Mail size={24} />
-              </a>
+
             </div>
           </div>
         </section>
@@ -693,13 +691,6 @@ const App = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
-                <a
-                  href="mailto:riccardomaria.zito@gmail.com"
-                  className="group bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-500 hover:to-blue-500 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg shadow-green-500/25"
-                >
-                  <Mail className="mr-2" size={20} />
-                  Get in touch
-                </a>
                 <a
                   href="https://www.linkedin.com/in/riccardo-maria-zito"
                   target="_blank"
