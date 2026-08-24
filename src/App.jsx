@@ -276,7 +276,7 @@ const App = () => {
       id: 'IA',
       title: 'Insurance Analytics',
       description: 'End-to-end app development for Planning',
-      technologies: ['Python', 'Flask', 'Pandas', 'Numpy','PostgreSQL'],
+      technologies: ['Python', 'FastAPI', 'Pandas', 'Numpy','PostgreSQL'],
       image: '📊',
       image_type: 'str',
       status: 'Completed',
@@ -312,24 +312,26 @@ const App = () => {
       liveButtonText: 'Article'
     },
     {
-      id: 'versioninglibrarysystem',
-      title: 'Versioning library',
-      description: 'A versioning library to enable versioning and version tracking of data and elaboration through processes, compatible with most common relational database',
-      technologies: ['Python', 'PostgreSQL', 'Azure SQL', 'MySQL', 'SQLite'],
+      id: 'thehomemanager',
+      title: 'The Home Manager',
+      description: 'The Home Manager is a comprehensive home management application designed to streamline household tasks and organization. It offers features for task scheduling, AI-powered task management, and family coordination and decision-making, all in one user-friendly platform.',
+      technologies: ['Azure Static Web Site','Python', 'PostgreSQL', 'Azure SQL', 'FastAPI', 'REST API', 'GitHub Actions', 'Azure Web App', 'Key Vault', 'Azure App Plan', 'EntraID'],
       liveUrl: '',
       image: '',
       image_type: 'str',
       status: 'Development',
-      category: 'SW development',
+      category: 'Web Application development',
       highlights: [
-        'Library development',
         'Architecture',
         'Coding',
-        'Relational databases'
+        'Relational databases',
+        'AI integration',
+        'Cloud deployment',
+        'Security and authentication'
       ],
-      showButtons : {live: false, github: true},
-      liveButtonText: '',
-      githubUrl: 'https://github.com/RicZit/relational_versioning.git'
+      showButtons : {live: true, github: false},
+      liveButtonText: 'Try Demo',
+      liveUrl: 'https://ashy-plant-0ce390d03.7.azurestaticapps.net/',
     }, 
     {
       id: 'weddingsite',
@@ -353,7 +355,7 @@ const App = () => {
     { category: 'Database', items: ['PostgreSQL', 'MySQL', 'SQLite', 'BigTable', 'BigQuery', 'SQL Spanner', 'Google Cloud SQL'] },
     { category: 'Cloud/DevOps', items: ['Azure', 'AWS', 'GCP', 'Databricks', 'Data Warehouse', 'Data Lake', 'GitHub Actions', 'CI/CD', 'Architecture', 'FinOps'] },
     { category: 'AI/ML', items: ['Machine Learning', 'Natural Language Processing', 'Data Analysis', 'TensorFlow'] },
-    { category: 'Frontend', items: ['React'] }
+    { category: 'Frontend', items: ['React', 'Material UI'] }
   ];
 
   const scrollToSection = (sectionId) => {
