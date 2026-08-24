@@ -332,21 +332,6 @@ const App = () => {
       showButtons : {live: true, github: false},
       liveButtonText: 'Try Demo',
       liveUrl: 'https://ashy-plant-0ce390d03.7.azurestaticapps.net/',
-    }, 
-    {
-      id: 'weddingsite',
-      title: 'Wedding Site',
-      description: 'My personal wedding website',
-      technologies: ['Python','Azure Static Web Site', 'GitHub Actions', 'Azure SQL', 'REST API'],
-      liveUrl: '',
-      image: '',
-      image_type: 'str',
-      status: 'Development',
-      category: 'Events planning',
-      highlights: [
-      ],
-      showButtons : {live: false, github: false},
-      liveButtonText: 'try demo'
     },
   ];
 
